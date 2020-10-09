@@ -1,0 +1,431 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Architects Daughter', cursive;
+	color: #0B3954;
+	background: #E6EBE0;
+}
+
+
+/*------------------ HEADER --------------------------*/
+.fondo{
+	width: 100%;
+	margin: 0 auto;
+	padding: 10%;
+	background: url('img/fondo3.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	
+}
+
+.titulo-profesion{
+	width: 40%;
+	margin: 0 auto;
+	border-radius: 5px;
+	border: 3px solid #E6EBE0;
+	text-align: center;
+	padding: 5%;
+	color:#E6EBE0;
+}
+
+.titulo-profesion h1{
+	font-size: 40px;
+}
+
+
+.menu-nav{
+	display: inline-block;
+	position: absolute;
+	top: 5%;
+	right: 6%;
+	font-size: 20px;
+	width: 40%;
+	text-align: center;
+}
+
+.menu-nav a{
+	text-decoration: none;
+	color:#F6F4F3;
+	margin: 0 2%;
+}
+
+.menu-nav a:hover{
+	color: #C17767;
+	font-weight: bold;
+}
+
+.foto-perfil{
+	width: 18%;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.foto-perfil img{
+	width:100%;
+	border: solid 5px rgba(24, 40, 37, .7);
+	border-radius: 100%;
+}
+
+/*------------------ MAIN --------------------------*/
+
+
+.main{
+	text-align:center;
+}
+
+.titulo-trabajos{
+	margin-top: -7%;
+	font-size: 20px;
+}
+
+.titulo-trabajos div{
+	margin-top: 2%;
+}
+
+.titulo-trabajos div a{
+	text-decoration: none;
+	color:#0B3954;
+	margin: 0 0.5%;
+}
+
+.titulo-trabajos div a:hover{
+	color: #C17767;
+	font-weight: bold;
+}
+
+.contenedor{
+	width: 70%;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 2% auto;
+}
+
+.individual{
+	width: 230px;
+	margin: 2% 5%;
+	font-size: 16px;;
+}
+
+.individual img{
+	width:100%;
+	opacity: 0.4;
+}
+
+.individual img:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+/*------------------ ACERCA DE -------------------*/
+
+.acerca-de{
+	margin: 8% 0;
+}
+
+.acerca-de .imagen-texto .foto{
+	width: 310%;
+}
+
+.acerca-de .imagen-texto .foto img{
+	width: 100%;
+}
+
+.imagen-texto{
+	width: 63%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.acerca-de div div p{
+	text-align: justify;
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.acerca-de div div h1{
+	margin-left: 5%;
+	color: #C17767;
+	font-size: 16px;
+}
+
+.acerca-de div .parrafo h1{
+	font-size: 30px;
+}
+
+.botones{
+	margin-top: 6.5%;
+	text-align: center;
+}
+
+.boton1{
+	background: #C17767;
+	border-radius: 20px;
+	padding: 2%;
+	margin: 0 2%;
+	text-decoration: none;
+	color: #E6EBE0;
+	border: solid 2px #C17767;
+}
+
+.boton-ghost{
+	border:solid 2px #C17767;
+	border-radius: 20px;
+	padding: 2%;
+	margin: 0 2%;
+	text-decoration: none;
+	color: #0B3954;
+}
+
+.boton1:hover{
+	background: #743C2F;
+	border-radius: 20px;
+	padding: 2%;
+	margin: 0 2%;
+	text-decoration: none;
+	color: #E6EBE0;
+	border: solid 2px #743C2F;
+}
+
+.boton-ghost:hover{
+	border:solid 2px #743C2F;
+	border-radius: 20px;
+	padding: 2%;
+	margin: 0 2%;
+	text-decoration: none;
+	color: #E6EBE0;
+	background: #743C2F;
+}
+
+
+/*------------------ CONTACTO -------------------*/
+
+.contacto{
+	text-align: center;
+}
+
+.contacto .contenedor{
+	width: 63%;
+}
+
+.contacto .contenedor .formulario{
+	display: flex;
+	flex-direction: column;
+	width: 60%;
+	text-align: left;
+}
+
+.contacto .contenedor .formulario input, 
+.contacto .contenedor .formulario textarea {
+	margin: 1.5% 0;
+	width: 100%;
+	border-radius: 5px;
+	padding: 1.5%;
+	border: solid 2px #D7DFCD;
+	background: #D7DFCD;
+	color: #0B3954;
+	font-family: 'Architects Daughter', cursive;
+	font-size: 16px;
+}
+
+.contacto .contenedor .formulario input:focus, 
+.contacto .contenedor .formulario textarea:focus{
+	border-color: #C17767;
+	outline: none;
+}
+
+::placeholder  { 
+	color: #C17767; 
+}
+:-ms-input-placeholder{
+	color: #C17767; 
+}
+::-webkit-input-placeholder{
+	color: #C17767;
+}
+::-moz-placeholder{
+	color: #C17767;
+}
+
+.contacto .contenedor .formulario textarea{
+	resize: vertical;
+	min-height: 25%;
+	max-height: 40%;
+}
+
+.contacto h1{
+	font-size: 32px;
+}
+
+.contacto .contenedor .detalles{
+	text-align: left;
+	margin-left: 5%;
+	font-size: 16px;
+	width: 35%;
+}
+
+.contacto .contenedor .detalles h3{
+	margin-bottom: 4%;
+}
+
+.contacto .contenedor .detalles div{
+	margin: 8% 0;
+}
+
+.contacto .contenedor .detalles .titulo{
+	color: #7A89C2;
+}
+
+.btn-enviar-mensaje{
+	width: 80%;
+	margin: 5% 0;
+}
+
+/*------------------ FOOTER -------------------*/
+
+.footer{
+	background: #0B3954;
+	padding: 4%;
+}
+
+.footer .cont{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 70%;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+.footer div a{
+	font-size: 25px;
+	color:#E6EBE0;
+	margin-top: 2%;
+}
+
+.footer div div{
+	width:80px;
+	display: flex;
+	justify-content: center;
+	margin: 0 3%;
+}
+
+.footer .cont .facebook:hover{
+	background:  #3b5998;
+	cursor: pointer;
+	border-radius: 7px;
+}
+
+.footer .cont .instagram:hover{
+	background:  #C13584;
+	cursor: pointer;
+	border-radius: 7px;
+}
+
+.footer .cont .youtube:hover{
+	background:  #c4302b;
+	cursor: pointer;
+	border-radius: 7px;
+}
+
+.footer .cont .twitter:hover{
+	background:  #00acee;
+	cursor: pointer;
+	border-radius: 7px;
+}
+
+
+/*------------------ MEDIA QUERIES -------------------*/
+
+@media screen and (max-width: 1300px){
+	.header .titulo-profesion h1{
+		font-size: 30px;
+	}
+
+	.header .titulo-profesion h2{
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 880px){
+	.header .titulo-profesion h1{
+		font-size: 20px;
+
+	}
+
+	.header .titulo-profesion h2{
+		font-size: 15px;
+	}
+
+	.menu-nav{
+		font-size: 16px;
+		width:80%;
+	}
+}
+
+
+@media screen and (max-width: 830px){
+	.individual{
+		width: 180px;
+		margin: 2% 5%;
+		font-size: 14px;;
+	}
+
+	.acerca-de .imagen-texto .foto{
+		width: 200px;
+		margin: 0 auto;
+	}
+
+	.acerca-de .imagen-texto {
+		display: block;
+		text-align: center;
+	}
+
+	.contacto .contenedor{
+		display: block;
+	}
+
+	.contacto .contenedor .formulario, 
+	.contacto .contenedor .detalles{
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	@media screen and (max-width: 590px){
+		.header .fondo .titulo-profesion h1{
+			font-size: 16px;
+		}
+
+		.header .fondo .titulo-profesion h2{
+			font-size: 12px;
+		}
+
+		.main .titulo-trabajos h1{
+			font-size: 16px;
+		}
+
+		.main .titulo-trabajos div{
+			font-size: 12px;
+		}
+
+		.header .fondo .titulo-profesion{
+			width: 180px;
+		}
+
+		.header .fondo. .menu-nav{
+			font-size: 12px;
+		}
+
+	
+	
+}
+
+
+
